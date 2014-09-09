@@ -93,6 +93,10 @@ class Jigoshop_Admin_Settings extends Jigoshop_Singleton {
 				}
 			}
 		}
+
+		add_action('admin_enqueue_scripts', function(){
+			do_action('jigoshop_enqueue_settings_scripts');
+		});
 	}
 
 	/**
